@@ -38,4 +38,4 @@ Marks all notifications as read.
 
 # Real-time Notification Mechanism
 
-A WebSocket connection (`/ws/notifications`) is used for real-time updates. The user connects using a valid token. The server sends new notifications instantly whenever they are created.
+A WebSocket connection (`/ws/notifications`) is used for real-time updates. The user connects using a valid token. The server sends new notifications instantly whenever they are created..
