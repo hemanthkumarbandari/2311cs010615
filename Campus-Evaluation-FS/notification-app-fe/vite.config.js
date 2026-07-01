@@ -1,16 +1,11 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import loggingMiddleware from '../logging-middleware/index.js'
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), loggingMiddleware()],
   server: {
     port: 3000,
-    strictPort: true,
-    proxy: {
-      '/evaluation-service': {
-        target: 'http://4.224.186.213',
-        changeOrigin: true
-      }
-    }
+    strictPort: true
   }
 })
